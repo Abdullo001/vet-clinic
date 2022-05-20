@@ -1164,7 +1164,10 @@ img {
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center; }
+          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start; }
 
 .feedback__map {
   width: 462px;
@@ -1176,7 +1179,7 @@ img {
       -ms-flex-positive: 1;
           flex-grow: 1;
   padding-top: 62px;
-  padding-bottom: 74px;
+  padding-bottom: 68px;
   padding-left: 166px;
   background-image: url("../images/feedback-bg.png");
   background-repeat: no-repeat;

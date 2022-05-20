@@ -9,6 +9,7 @@
 
 .feedback__inner {
 	@include flex-starter;
+	align-items: flex-start;
 }
 
 .feedback__map {
@@ -20,7 +21,7 @@
 .feedback__info {
 	flex-grow: 1;
 	padding-top: 62px;
-	padding-bottom: 74px;
+	padding-bottom: 68px;
 	padding-left: 166px;
 	background-image: url('../images/feedback-bg.png');
 	background-repeat: no-repeat;
