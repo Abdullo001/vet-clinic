@@ -1,20 +1,35 @@
-html{
-    scroll-behavior: smooth;
+html {
+	scroll-behavior: smooth;
 }
 
-*,*::after,*::before{
-    box-sizing: border-box;
-
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
 }
 
-body{
-    font-family: 'Arial',sans-serif;
-    margin: 0;
-    padding: 0;
+body {
+	font-family: 'Futura', 'Arial', sans-serif;
+	margin: 0;
+	padding: 0;
+	background-image: url('../images/bg.png');
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-color: #f6f6f6;
 }
 
-img{
-    vertical-align: middle;
-    object-fit: cover;
+img {
+	vertical-align: middle;
+	object-fit: cover;
 }
 
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+	only screen and (min--moz-device-pixel-ratio: 2),
+	only screen and (-o-min-device-pixel-ratio: 2/1),
+	only screen and (min-device-pixel-ratio: 2),
+	only screen and (min-resolution: 192dpi),
+	only screen and (min-resolution: 2dppx) {
+	body {
+		background-image: url('../images/bg@2x.png');
+	}
+}

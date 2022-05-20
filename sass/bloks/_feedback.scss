@@ -1,0 +1,121 @@
+.feedback {
+	margin-bottom: 247px;
+
+	.container {
+		max-width: 1463px;
+		padding: 0;
+	}
+}
+
+.feedback__inner {
+	@include flex-starter;
+}
+
+.feedback__map {
+	width: 462px;
+	mix-blend-mode: luminosity;
+	border-radius: 0px;
+}
+
+.feedback__info {
+	flex-grow: 1;
+	padding-top: 62px;
+	padding-bottom: 74px;
+	padding-left: 166px;
+	background-image: url('../images/feedback-bg.png');
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-position: left 8px top;
+	background-color: #333333;
+}
+
+.feedback__textbox {
+	width: 360px;
+}
+
+.feedback__title {
+	margin: 0;
+	margin-bottom: 14px;
+	padding: 0;
+	font-weight: 700;
+	font-size: 48px;
+	line-height: 62px;
+	color: #ffffff;
+}
+
+.feedback__text {
+	margin: 0;
+	margin-bottom: 29px;
+	padding: 0;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 20px;
+	color: #949494;
+}
+
+.feedback__form {
+	width: 375px;
+}
+
+.feedback__input {
+	display: block;
+	width: 100%;
+	margin-bottom: 14px;
+	padding: 16px 22px 13px 22px;
+	background-color: #ffffff;
+	border-radius: 0px;
+	border: 0;
+
+	&[placeholder] {
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 21px;
+		color: #949494;
+	}
+}
+
+.feedback__textarea {
+	width: 100%;
+	height: 165px;
+	margin-bottom: 30px;
+	padding: 17px 22px;
+	resize: none;
+
+	&[placeholder] {
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 21px;
+		color: #949494;
+	}
+}
+.feedback__btn {
+	padding: 15px 50px;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 21px;
+	color: #ffffff;
+	background-color: #ffbd54;
+	border: 0;
+	border-radius: 0px;
+	transition: all 0.3s ease;
+	cursor: pointer;
+
+	&:hover {
+		opacity: 0.8;
+	}
+
+	&:active {
+		opacity: 0.6;
+	}
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+	only screen and (min--moz-device-pixel-ratio: 2),
+	only screen and (-o-min-device-pixel-ratio: 2/1),
+	only screen and (min-device-pixel-ratio: 2),
+	only screen and (min-resolution: 192dpi),
+	only screen and (min-resolution: 2dppx) {
+	.feedback__info {
+		background-image: url('../images/feedback-bg@2x.png');
+	}
+}

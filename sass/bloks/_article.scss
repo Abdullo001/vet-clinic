@@ -1,0 +1,153 @@
+.article {
+	margin-bottom: 265px;
+}
+
+.article__title {
+	margin: 0;
+	margin-bottom: 80px;
+	padding: 0;
+	font-weight: 700;
+	font-size: 48px;
+	line-height: 20px;
+	text-align: center;
+	color: #333333;
+}
+
+.article__list {
+	@include flex-starter;
+	justify-content: space-between;
+	@include correct-list;
+}
+
+.article__item {
+	width: 305px;
+	border: 1px solid #e4e4e2;
+	border-radius: 5px;
+	background-color: #ffffff;
+}
+
+.article__item:nth-child(2) {
+	@include flex-starter;
+	border: 1px solid #f3f3f3;
+	width: 640px;
+
+	.article__topinfo {
+		margin-bottom: 37px;
+	}
+
+	.article__subtitle {
+		margin-bottom: 20px;
+	}
+
+	.article__text {
+		margin-bottom: 45px;
+	}
+}
+
+.article__img {
+	width: 305px;
+	height: 180px;
+	margin-bottom: 21px;
+}
+
+.activeimg {
+	height: 435px;
+	margin-bottom: 0;
+}
+
+.article__info {
+	position: relative;
+	z-index: 100;
+	padding: 0 30px 37px 22px;
+}
+
+.article__topinfo {
+	@include flex-starter;
+	margin-bottom: 2px;
+}
+
+.article__hashtag {
+	margin-right: 7px;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 22px;
+	color: #3d9cea;
+	text-decoration: none;
+
+	&:nth-child(3) {
+		margin-right: 0;
+	}
+}
+
+.article__time {
+	margin-left: auto;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 18px;
+	color: #949494;
+}
+
+.article__subtitle {
+	margin: 0;
+	margin-bottom: 10px;
+	padding: 0;
+	font-weight: 700;
+	font-size: 22px;
+	line-height: 25px;
+	color: #000000;
+}
+
+.article__text {
+	margin: 0;
+	margin-bottom: 38px;
+	padding: 0;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 20px;
+	color: #949494;
+}
+
+.article__link {
+	position: relative;
+	z-index: 1000;
+	margin-left: 34px;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 21px;
+	color: #333333;
+	text-decoration: none;
+
+	&::before {
+		position: absolute;
+		top: calc(50% - 12.5px);
+		left: -30px;
+		display: inline-block;
+		width: 25px;
+		height: 25px;
+		background-image: url('../images/pet.svg');
+		content: ' ';
+	}
+
+	&::after {
+		position: absolute;
+		z-index: -1;
+		bottom: 2px;
+		right: 0;
+		display: inline-block;
+		width: 100%;
+		height: 0;
+		background-color: #f4ffad;
+		transition: all 0.3s ease;
+		content: '';
+	}
+
+	&:hover::after {
+		height: 30%;
+	}
+
+	&:active,
+	&:active::after,
+	&:active::before {
+		opacity: 0.8;
+	}
+}

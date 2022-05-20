@@ -1,0 +1,90 @@
+.aforizm {
+	padding-top: 44px;
+	padding-bottom: 191px;
+}
+.aforizm__inner {
+	position: relative;
+	margin: 0 auto;
+	max-width: 753px;
+	width: 100%;
+
+	&::before {
+		position: absolute;
+		top: calc(0% - 30px);
+		left: calc(50% - 480px);
+		display: inline-block;
+		width: 50px;
+		height: 42px;
+		background-image: url('../images/“(1).png');
+		content: '';
+	}
+
+	&::after {
+		position: absolute;
+		top: calc(50% - 50px);
+		left: calc(50% + 400px);
+		display: inline-block;
+		width: 50px;
+		height: 42px;
+		background-image: url('../images/“.png');
+		content: '';
+	}
+}
+
+.aforizm__text {
+	position: relative;
+	margin: 0;
+	margin-bottom: 70px;
+	padding: 0;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 26px;
+	text-align: center;
+	color: #949494;
+
+	&::before {
+		position: absolute;
+		top: -44px;
+		left: calc(50% - 70px);
+		display: inline-block;
+		width: 140px;
+		height: 1px;
+		background-color: #dbdbdb;
+		content: '';
+	}
+
+	&::after {
+		position: absolute;
+		bottom: -36px;
+		left: calc(50% - 70px);
+		display: inline-block;
+		width: 140px;
+		height: 1px;
+		background-color: #dbdbdb;
+		content: '';
+	}
+}
+
+.aforizm__title {
+	display: block;
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 26px;
+	color: #333333;
+	text-align: center;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+	only screen and (min--moz-device-pixel-ratio: 2),
+	only screen and (-o-min-device-pixel-ratio: 2/1),
+	only screen and (min-device-pixel-ratio: 2),
+	only screen and (min-resolution: 192dpi),
+	only screen and (min-resolution: 2dppx) {
+	&::before {
+		background-image: url('../images/“(1)@2x.png');
+	}
+
+	&::after {
+		background-image: url('../images/“@2x.png');
+	}
+}
